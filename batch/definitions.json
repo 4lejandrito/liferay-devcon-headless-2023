@@ -1,0 +1,322 @@
+[
+  {
+    "accountEntryRestricted": false,
+    "externalReferenceCode": "MSOD_POLL_VOTE",
+    "label": {
+      "en_US": "Poll Vote"
+    },
+    "modifiable": true,
+    "name": "Vote",
+    "objectFields": [
+      {
+        "DBType": "String",
+        "businessType": "Text",
+        "defaultValue": "",
+        "externalReferenceCode": "NAME",
+        "indexed": true,
+        "indexedAsKeyword": false,
+        "indexedLanguageId": "en_US",
+        "label": {
+          "en_US": "Name"
+        },
+        "listTypeDefinitionExternalReferenceCode": "",
+        "name": "name",
+        "objectFieldSettings": [
+          {
+            "name": "showCounter",
+            "value": "false"
+          }
+        ],
+        "required": false,
+        "state": false,
+        "system": false,
+        "type": "String"
+      }
+    ],
+    "objectLayouts": [
+      {
+        "defaultObjectLayout": true,
+        "name": {
+          "en_US": "Main"
+        },
+        "objectDefinitionExternalReferenceCode": "MSOD_POLL_VOTE",
+        "objectLayoutTabs": [
+          {
+            "name": {
+              "en_US": "Poll Vote"
+            },
+            "objectLayoutBoxes": [
+              {
+                "collapsable": false,
+                "name": {
+                  "en_US": "Poll Vote"
+                },
+                "objectLayoutRows": [
+                  {
+                    "objectLayoutColumns": [
+                      {
+                        "objectFieldName": "name",
+                        "priority": 0,
+                        "size": 12
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ],
+                "priority": 0,
+                "type": "regular"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "objectRelationships": [],
+    "panelCategoryKey": "applications_menu.applications.content",
+    "pluralLabel": {
+      "en_US": "Poll Votes"
+    },
+    "scope": "company",
+    "status": {
+      "code": 0
+    },
+    "system": true,
+    "titleObjectFieldName": "name"
+  },
+  {
+    "accountEntryRestricted": false,
+    "externalReferenceCode": "MSOD_POLL_OPTION",
+    "label": {
+      "en_US": "Poll Option"
+    },
+    "modifiable": true,
+    "name": "Option",
+    "objectFields": [
+      {
+        "DBType": "String",
+        "businessType": "Text",
+        "defaultValue": "",
+        "externalReferenceCode": "VALUE",
+        "indexed": true,
+        "indexedAsKeyword": false,
+        "indexedLanguageId": "en_US",
+        "label": {
+          "en_US": "Value"
+        },
+        "listTypeDefinitionExternalReferenceCode": "",
+        "name": "value",
+        "objectFieldSettings": [
+          {
+            "name": "showCounter",
+            "value": "false"
+          }
+        ],
+        "required": true,
+        "state": false,
+        "system": false,
+        "type": "String"
+      }
+    ],
+    "objectLayouts": [
+      {
+        "defaultObjectLayout": true,
+        "name": {
+          "en_US": "Main"
+        },
+        "objectDefinitionExternalReferenceCode": "MSOD_POLL_OPTION",
+        "objectLayoutTabs": [
+          {
+            "name": {
+              "en_US": "Poll Option"
+            },
+            "objectLayoutBoxes": [
+              {
+                "collapsable": false,
+                "name": {
+                  "en_US": "Poll"
+                },
+                "objectLayoutRows": [
+                  {
+                    "objectLayoutColumns": [
+                      {
+                        "objectFieldName": "value",
+                        "priority": 0,
+                        "size": 12
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ],
+                "priority": 0,
+                "type": "regular"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "objectRelationships": [
+      {
+        "deletionType": "cascade",
+        "label": {
+          "en_US": "Votes"
+        },
+        "name": "votes",
+        "objectDefinitionExternalReferenceCode1": "MSOD_POLL_OPTION",
+        "objectDefinitionExternalReferenceCode2": "MSOD_POLL_VOTE",
+        "objectDefinitionName2": "Vote",
+        "parameterObjectFieldId": 0,
+        "parameterObjectFieldName": "",
+        "reverse": false,
+        "type": "oneToMany"
+      }
+    ],
+    "objectValidationRules": [],
+    "panelCategoryKey": "applications_menu.applications.content",
+    "pluralLabel": {
+      "en_US": "Poll Options"
+    },
+    "scope": "company",
+    "status": {
+      "code": 0
+    },
+    "system": true,
+    "titleObjectFieldName": "value"
+  },
+  {
+    "accountEntryRestricted": false,
+    "externalReferenceCode": "MSOD_POLL",
+    "label": {
+      "en_US": "Poll"
+    },
+    "modifiable": true,
+    "name": "Poll",
+    "objectFields": [
+      {
+        "DBType": "String",
+        "businessType": "Text",
+        "defaultValue": "",
+        "externalReferenceCode": "NAME",
+        "indexed": true,
+        "indexedAsKeyword": false,
+        "indexedLanguageId": "en_US",
+        "label": {
+          "en_US": "Name"
+        },
+        "listTypeDefinitionExternalReferenceCode": "",
+        "name": "name",
+        "objectFieldSettings": [
+          {
+            "name": "showCounter",
+            "value": "false"
+          }
+        ],
+        "required": false,
+        "state": false,
+        "system": false,
+        "type": "String"
+      },
+      {
+        "DBType": "Clob",
+        "businessType": "LongText",
+        "defaultValue": "",
+        "externalReferenceCode": "DESCRIPTION",
+        "indexed": true,
+        "indexedAsKeyword": false,
+        "indexedLanguageId": "",
+        "label": {
+          "en_US": "Description"
+        },
+        "listTypeDefinitionExternalReferenceCode": "",
+        "name": "description",
+        "objectFieldSettings": [
+          {
+            "name": "showCounter",
+            "value": "false"
+          }
+        ],
+        "required": false,
+        "state": false,
+        "system": false,
+        "type": "Clob"
+      }
+    ],
+    "objectLayouts": [
+      {
+        "defaultObjectLayout": true,
+        "name": {
+          "en_US": "Main"
+        },
+        "objectDefinitionExternalReferenceCode": "MSOD_POLL",
+        "objectLayoutTabs": [
+          {
+            "name": {
+              "en_US": "Polls"
+            },
+            "objectLayoutBoxes": [
+              {
+                "collapsable": false,
+                "name": {
+                  "en_US": "Poll"
+                },
+                "objectLayoutRows": [
+                  {
+                    "objectLayoutColumns": [
+                      {
+                        "objectFieldName": "name",
+                        "priority": 0,
+                        "size": 12
+                      }
+                    ],
+                    "priority": 0
+                  },
+                  {
+                    "objectLayoutColumns": [
+                      {
+                        "objectFieldName": "description",
+                        "priority": 0,
+                        "size": 12
+                      }
+                    ],
+                    "priority": 0
+                  }
+                ],
+                "priority": 0,
+                "type": "regular"
+              }
+            ],
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "objectRelationships": [
+      {
+        "deletionType": "cascade",
+        "label": {
+          "en_US": "Options"
+        },
+        "name": "options",
+        "objectDefinitionExternalReferenceCode1": "MSOD_POLL",
+        "objectDefinitionExternalReferenceCode2": "MSOD_POLL_OPTION",
+        "objectDefinitionName2": "Option",
+        "parameterObjectFieldId": 0,
+        "parameterObjectFieldName": "",
+        "reverse": false,
+        "type": "oneToMany"
+      }
+    ],
+    "panelCategoryKey": "applications_menu.applications.content",
+    "pluralLabel": {
+      "en_US": "Polls"
+    },
+    "scope": "company",
+    "status": {
+      "code": 0
+    },
+    "system": true,
+    "titleObjectFieldName": "name"
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "description": "What's your favourite Zelda game?",
+    "externalReferenceCode": "zelda",
+    "name": "Zelda",
+    "options": [
+      {
+        "externalReferenceCode": "none",
+        "value": "I don't play Zelda 😢"
+      },
+      {
+        "externalReferenceCode": "the-legend-of-zelda",
+        "value": "The Legend of Zelda 🗡"
+      },
+      {
+        "externalReferenceCode": "zelda-ii-the-adventure-of-link",
+        "value": "Zelda II: The Adventure of Link 🏹"
+      },
+      {
+        "externalReferenceCode": "a-link-to-the-past",
+        "value": "A Link to the Past 🔗🕰"
+      },
+      {
+        "externalReferenceCode": "links-awakening",
+        "value": "Link's Awakening 🐡"
+      },
+      {
+        "externalReferenceCode": "ocarina-of-time",
+        "value": "Ocarina of Time 🎶"
+      },
+      {
+        "externalReferenceCode": "majoras-mask",
+        "value": "Majora's Mask 👺🌕"
+      },
+      {
+        "externalReferenceCode": "oracle-of-ages",
+        "value": "Oracle of Ages 🔮🕝"
+      },
+      {
+        "externalReferenceCode": "oracle-of-seasons",
+        "value": "Oracle of Seasons 🔮🌦"
+      },
+      {
+        "externalReferenceCode": "the-wind-waker",
+        "value": "The Wind Waker ⛵️"
+      },
+      {
+        "externalReferenceCode": "four-swords-adventures",
+        "value": "Four Swords Adventures ⚔️⚔️"
+      },
+      {
+        "externalReferenceCode": "the-minish-cap",
+        "value": "The Minish Cap 👒"
+      },
+      {
+        "externalReferenceCode": "twilight-princess",
+        "value": "Twilight Princess 🐺"
+      },
+      {
+        "externalReferenceCode": "phantom-hourglass",
+        "value": "Phantom Hourglass ⏳"
+      },
+      {
+        "externalReferenceCode": "spirit-tracks",
+        "value": "Spirit Tracks 🚂"
+      },
+      {
+        "externalReferenceCode": "skyward-sword",
+        "value": "Skyward Sword ☁️🗡"
+      },
+      {
+        "externalReferenceCode": "a-link-between-worlds",
+        "value": "A Link Between Worlds 🖼"
+      },
+      {
+        "externalReferenceCode": "tri-force-heroes",
+        "value": "Tri Force Heroes 3️⃣"
+      },
+      {
+        "externalReferenceCode": "breath-of-the-wild",
+        "value": "Breath of the Wild 🏞"
+      },
+      {
+        "externalReferenceCode": "tears-of-the-kingdom",
+        "value": "Tears of the Kingdom 💧"
+      }
+    ]
+  }
+]
