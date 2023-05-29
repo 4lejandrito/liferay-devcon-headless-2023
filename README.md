@@ -10,7 +10,7 @@ The demo consisted on a poll built with [Liferay Objects](https://learn.liferay.
     - [Results page](templates/results.ftl).
 
 ## Results
-These was the voting page:
+This was the voting page:
 
 ![Vote page](images/vote.png)
 
